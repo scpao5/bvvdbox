@@ -1,0 +1,16 @@
+# Gradle / 构建产物
+.gradle/
+build/
+app/build/
+.kotlin/
+local.properties
+
+# IDE
+.idea/
+*.iml
+captures/
+.cxx/
+
+# 输出
+*.apk
+*.aab
