@@ -64,7 +64,7 @@ android {
     }
 
     androidResources {
-        noCompress += setOf("mp3", "flac")
+        noCompress += setOf("mp3", "flac", "ogg")
     }
 
     packaging {

@@ -50,7 +50,8 @@ class MainActivity : Activity() {
                 Item("掩护我", "掩护我.mp3", false),
                 Item("干得好", "干得好.mp3", false),
                 Item("正在装填", "正在装填.mp3", false),
-                Item("巴巴打捏", "巴巴打捏.mp3", false),
+                Item("巴巴打捏", "巴巴打捏.ogg", false),
+                Item("这路你是多熟呢", "这路你是多熟呢.ogg", false),
             )
         ),
         Group(
@@ -67,7 +68,7 @@ class MainActivity : Activity() {
                 Item("目标摧毁", "目标摧毁.mp3", false),
                 Item("目标消失", "目标消失.mp3", false),
                 Item("目标已消灭", "目标已消灭.mp3", false),
-                Item("命中", "命中.mp3", false),
+                Item("命中", "命中.ogg", false),
                 Item("开饭了", "开饭了.mp3", false),
                 Item("击毁坦克", "击毁坦克.mp3", false),
                 Item("击毁飞机", "击毁飞机.mp3", false),
