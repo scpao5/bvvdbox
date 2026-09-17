@@ -104,7 +104,8 @@ class MainActivity : Activity() {
                 Item("丹妮丝之歌", "丹妮丝之歌.flac", true),
                 Item("光荣飞行", "光荣飞行.mp3", true),
                 Item("念巴兰尼科夫", "念巴兰尼科夫.mp3", true),
-                Item("自由钟声", "自由钟声.mp3", true)
+                Item("自由钟声", "自由钟声.mp3", true),
+                Item("红星复仇者恶搞版", "红星复仇者恶搞版.mp3", true)
             )
         )
     )
