@@ -50,7 +50,7 @@ class MainActivity : Activity() {
                 Item("掩护我", "掩护我.mp3", false),
                 Item("干得好", "干得好.mp3", false),
                 Item("正在装填", "正在装填.mp3", false),
-                Item("巴巴打捏", "巴巴打捏.ogg", false),
+                Item("巴巴达涅", "巴巴达涅.ogg", false),
                 Item("这路你是多熟呢", "这路你是多熟呢.ogg", false),
             )
         ),
