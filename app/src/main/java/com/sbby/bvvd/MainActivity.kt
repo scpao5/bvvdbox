@@ -151,6 +151,7 @@ class MainActivity : Activity() {
                 if (i % 3 == 0) {
                     row = LinearLayout(this)
                     row!!.orientation = LinearLayout.HORIZONTAL
+                    row!!.baselineAligned = false
                     content.addView(row, LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT))
                 }
                 row!!.addView(makeButton(item))
