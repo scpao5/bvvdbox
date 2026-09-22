@@ -13,7 +13,6 @@ import android.view.WindowManager
 import android.widget.LinearLayout
 import android.widget.ScrollView
 import android.widget.TextView
-import org.json.JSONObject
 
 class MainActivity : Activity() {
 
@@ -25,41 +24,92 @@ class MainActivity : Activity() {
     private class Item(val label: String, val file: String, val long: Boolean)
     private class Group(val title: String, val items: List<Item>)
 
-    // ---- 数据来源: assets/config.json (数据驱动) ----
-    private fun loadGroups(): List<Group> {
-        val groups = ArrayList<Group>()
-        val json = try {
-            assets.open("config.json").bufferedReader().use { it.readText() }
-        } catch (e: Exception) {
-            null
-        }
-        if (json == null) return groups
-        try {
-            val root = JSONObject(json)
-            val arr = root.getJSONArray("groups")
-            for (i in 0 until arr.length()) {
-                val g = arr.getJSONObject(i)
-                val title = g.optString("title", "")
-                val items = ArrayList<Item>()
-                val itArr = g.optJSONArray("items") ?: continue
-                for (j in 0 until itArr.length()) {
-                    val o = itArr.getJSONObject(j)
-                    val label = o.optString("label", "")
-                    val file = o.optString("file", "")
-                    val type = o.optString("type", "sfx")
-                    if (file.isEmpty()) continue
-                    // file 形如 "audio/xxx.mp3" 或 "music/xxx.mp3"
-                    val isMusic = (type == "music") || file.startsWith("music/")
-                    val name = file.substringAfterLast('/')
-                    items.add(Item(label, name, isMusic))
-                }
-                groups.add(Group(title, items))
-            }
-        } catch (e: Exception) {
-            // json 解析失败 → 返回空, UI 会显示"无内容"
-        }
-        return groups
-    }
+    private val groups: List<Group> = listOf(
+        Group(
+            "战术语音",
+            listOf(
+                Item("进攻A点", "进攻A点.mp3", false),
+                Item("进攻B点", "进攻B点.mp3", false),
+                Item("进攻C点", "进攻C点.mp3", false),
+                Item("进攻D点", "进攻D点.mp3", false),
+                Item("攻击基地", "攻击基地.mp3", false),
+                Item("攻击部队", "攻击部队.mp3", false),
+                Item("防守A点", "防守A点.mp3", false),
+                Item("防守B点", "防守B点.mp3", false),
+                Item("防守C点", "防守C点.mp3", false),
+                Item("防守D点", "防守D点.mp3", false),
+                Item("注意标识区域", "注意标识区域.mp3", false),
+                Item("准备着陆", "准备着陆.mp3", false),
+                Item("收到", "收到.mp3", false),
+                Item("不行", "不行.mp3", false),
+                Item("抱歉", "抱歉.mp3", false),
+                Item("感谢", "感谢.mp3", false),
+                Item("正在修理", "正在修理.mp3", false),
+                Item("正在返回基地", "正在返回基地.mp3", false),
+                Item("跟我来", "跟我来.mp3", false),
+                Item("掩护我", "掩护我.mp3", false),
+                Item("干得好", "干得好.mp3", false),
+                Item("正在装填", "正在装填.mp3", false),
+                Item("巴巴达涅", "巴巴达涅.ogg", false),
+                Item("这路你是多熟呢", "这路你是多熟呢.ogg", false),
+            )
+        ),
+        Group(
+            "游戏音效",
+            listOf(
+                Item("敌方夺取战区", "敌方夺取战区.mp3", false),
+                Item("我方夺取战区", "我方夺取战区.mp3", false),
+                Item("局势不太妙", "局势不太妙.mp3", false),
+                Item("局势很有利", "局势很有利.mp3", false),
+                Item("即将胜利", "即将胜利.mp3", false),
+                Item("即将失败", "即将失败.mp3", false),
+                Item("受击音效1", "受击音效1.mp3", false),
+                Item("受击音效2", "受击音效2.mp3", false),
+                Item("目标摧毁", "目标摧毁.mp3", false),
+                Item("目标消失", "目标消失.mp3", false),
+                Item("目标已消灭", "目标已消灭.mp3", false),
+                Item("命中", "命中.ogg", false),
+                Item("开饭了", "开饭了.mp3", false),
+                Item("击毁坦克", "击毁坦克.mp3", false),
+                Item("击毁飞机", "击毁飞机.mp3", false),
+                Item("网络状态不佳", "网络状态不佳.mp3", false),
+                Item("按计划打扫战场", "按计划打扫战场.mp3", false),
+                Item("胜败乃兵家常事1", "胜败乃兵家常事1.mp3", false),
+                Item("胜败乃兵家常事2", "胜败乃兵家常事2.mp3", false),
+                Item("胜败乃兵家常事3", "胜败乃兵家常事3.mp3", false),
+                Item("进入攻击起始点", "进入攻击起始点.mp3", false),
+                Item("进入预定航线", "进入预定航线.mp3", false),
+                Item("前往目标地点", "前往目标地点.mp3", false),
+                Item("游戏开始", "游戏开始.mp3", false),
+                Item("获得金币", "获得金币.mp3", false),
+                Item("花钱消费", "花钱消费.mp3", false),
+                Item("领取任务", "领取任务.mp3", false),
+                Item("获得奖励", "获得奖励.mp3", false),
+                Item("抽奖开始", "抽奖开始.mp3", false),
+                Item("抽奖_转动循环", "抽奖_转动循环.mp3", false),
+                Item("抽奖_停止", "抽奖_停止.mp3", false),
+                Item("抽奖_格子升起", "抽奖_格子升起.mp3", false),
+                Item("切换载具", "切换载具.mp3", false),
+            )
+        ),
+        Group(
+            "战歌 / 音乐",
+            listOf(
+                Item("复仇天使", "复仇天使.mp3", true),
+                Item("伟大的祖国", "伟大的祖国.mp3", true),
+                Item("红星复仇者", "红星复仇者.mp3", true),
+                Item("前进澳大利亚", "前进澳大利亚.mp3", true),
+                Item("保卫海岸", "保卫海岸.flac", true),
+                Item("斯拉夫雷霆", "斯拉夫雷霆.mp3", true),
+                Item("丹妮丝之歌", "丹妮丝之歌.flac", true),
+                Item("光荣飞行", "光荣飞行.mp3", true),
+                Item("念巴兰尼科夫", "念巴兰尼科夫.mp3", true),
+                Item("自由钟声", "自由钟声.mp3", true),
+                Item("红星复仇者恶搞版", "红星复仇者恶搞版.mp3", true),
+                Item("安东星的家", "安东星的家.mp3", true)
+            )
+        )
+    )
 
     // ---- Material 浅色配色（对齐 aqzlgj）----
     private val C_BG = Color.parseColor("#F0F4F8")
@@ -84,7 +134,6 @@ class MainActivity : Activity() {
     }
 
     private fun buildUi() {
-        val groups = loadGroups()
         val root = LinearLayout(this)
         root.orientation = LinearLayout.VERTICAL
         root.setBackgroundColor(C_BG)

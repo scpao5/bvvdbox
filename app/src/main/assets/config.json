@@ -1,0 +1,360 @@
+{
+  "version": 1,
+  "groups": [
+    {
+      "title": "战术语音",
+      "items": [
+        {
+          "label": "进攻A点",
+          "file": "audio/进攻A点.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "进攻B点",
+          "file": "audio/进攻B点.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "进攻C点",
+          "file": "audio/进攻C点.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "进攻D点",
+          "file": "audio/进攻D点.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "攻击基地",
+          "file": "audio/攻击基地.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "攻击部队",
+          "file": "audio/攻击部队.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "防守A点",
+          "file": "audio/防守A点.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "防守B点",
+          "file": "audio/防守B点.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "防守C点",
+          "file": "audio/防守C点.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "防守D点",
+          "file": "audio/防守D点.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "注意标识区域",
+          "file": "audio/注意标识区域.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "准备着陆",
+          "file": "audio/准备着陆.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "收到",
+          "file": "audio/收到.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "不行",
+          "file": "audio/不行.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "抱歉",
+          "file": "audio/抱歉.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "感谢",
+          "file": "audio/感谢.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "正在修理",
+          "file": "audio/正在修理.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "正在返回基地",
+          "file": "audio/正在返回基地.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "跟我来",
+          "file": "audio/跟我来.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "掩护我",
+          "file": "audio/掩护我.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "干得好",
+          "file": "audio/干得好.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "正在装填",
+          "file": "audio/正在装填.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "巴巴达涅",
+          "file": "audio/巴巴达涅.ogg",
+          "type": "sfx"
+        },
+        {
+          "label": "这路你是多熟呢",
+          "file": "audio/这路你是多熟呢.ogg",
+          "type": "sfx"
+        }
+      ]
+    },
+    {
+      "title": "游戏音效",
+      "items": [
+        {
+          "label": "敌方夺取战区",
+          "file": "audio/敌方夺取战区.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "我方夺取战区",
+          "file": "audio/我方夺取战区.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "局势不太妙",
+          "file": "audio/局势不太妙.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "局势很有利",
+          "file": "audio/局势很有利.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "即将胜利",
+          "file": "audio/即将胜利.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "即将失败",
+          "file": "audio/即将失败.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "受击音效1",
+          "file": "audio/受击音效1.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "受击音效2",
+          "file": "audio/受击音效2.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "目标摧毁",
+          "file": "audio/目标摧毁.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "目标消失",
+          "file": "audio/目标消失.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "目标已消灭",
+          "file": "audio/目标已消灭.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "命中",
+          "file": "audio/命中.ogg",
+          "type": "sfx"
+        },
+        {
+          "label": "开饭了",
+          "file": "audio/开饭了.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "击毁坦克",
+          "file": "audio/击毁坦克.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "击毁飞机",
+          "file": "audio/击毁飞机.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "网络状态不佳",
+          "file": "audio/网络状态不佳.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "按计划打扫战场",
+          "file": "audio/按计划打扫战场.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "胜败乃兵家常事1",
+          "file": "audio/胜败乃兵家常事1.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "胜败乃兵家常事2",
+          "file": "audio/胜败乃兵家常事2.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "胜败乃兵家常事3",
+          "file": "audio/胜败乃兵家常事3.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "进入攻击起始点",
+          "file": "audio/进入攻击起始点.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "进入预定航线",
+          "file": "audio/进入预定航线.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "前往目标地点",
+          "file": "audio/前往目标地点.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "游戏开始",
+          "file": "audio/游戏开始.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "获得金币",
+          "file": "audio/获得金币.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "花钱消费",
+          "file": "audio/花钱消费.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "领取任务",
+          "file": "audio/领取任务.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "获得奖励",
+          "file": "audio/获得奖励.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "抽奖开始",
+          "file": "audio/抽奖开始.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "抽奖_转动循环",
+          "file": "audio/抽奖_转动循环.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "抽奖_停止",
+          "file": "audio/抽奖_停止.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "抽奖_格子升起",
+          "file": "audio/抽奖_格子升起.mp3",
+          "type": "sfx"
+        },
+        {
+          "label": "切换载具",
+          "file": "audio/切换载具.mp3",
+          "type": "sfx"
+        }
+      ]
+    },
+    {
+      "title": "战歌 / 音乐",
+      "items": [
+        {
+          "label": "复仇天使",
+          "file": "music/复仇天使.mp3",
+          "type": "music"
+        },
+        {
+          "label": "伟大的祖国",
+          "file": "music/伟大的祖国.mp3",
+          "type": "music"
+        },
+        {
+          "label": "红星复仇者",
+          "file": "music/红星复仇者.mp3",
+          "type": "music"
+        },
+        {
+          "label": "前进澳大利亚",
+          "file": "music/前进澳大利亚.mp3",
+          "type": "music"
+        },
+        {
+          "label": "保卫海岸",
+          "file": "music/保卫海岸.flac",
+          "type": "music"
+        },
+        {
+          "label": "斯拉夫雷霆",
+          "file": "music/斯拉夫雷霆.mp3",
+          "type": "music"
+        },
+        {
+          "label": "丹妮丝之歌",
+          "file": "music/丹妮丝之歌.flac",
+          "type": "music"
+        },
+        {
+          "label": "光荣飞行",
+          "file": "music/光荣飞行.mp3",
+          "type": "music"
+        },
+        {
+          "label": "念巴兰尼科夫",
+          "file": "music/念巴兰尼科夫.mp3",
+          "type": "music"
+        },
+        {
+          "label": "自由钟声",
+          "file": "music/自由钟声.mp3",
+          "type": "music"
+        },
+        {
+          "label": "红星复仇者恶搞版",
+          "file": "music/红星复仇者恶搞版.mp3",
+          "type": "music"
+        }
+      ]
+    }
+  ]
+}
