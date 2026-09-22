@@ -340,6 +340,11 @@
           "type": "music"
         },
         {
+          "label": "自由,荣耀前进",
+          "file": "music/自由,荣耀前进.flac",
+          "type": "music"
+        },
+        {
           "label": "念巴兰尼科夫",
           "file": "music/念巴兰尼科夫.mp3",
           "type": "music"
