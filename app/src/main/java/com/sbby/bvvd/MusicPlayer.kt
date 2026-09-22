@@ -1,6 +1,7 @@
 package com.sbby.bvvd
 
 import android.content.Context
+import android.media.AudioAttributes
 import android.media.MediaPlayer
 
 class MusicPlayer(private val context: Context) {
@@ -19,6 +20,12 @@ class MusicPlayer(private val context: Context) {
         }
         stop()
         val p = MediaPlayer()
+        p.setAudioAttributes(
+            AudioAttributes.Builder()
+                .setUsage(AudioAttributes.USAGE_MEDIA)
+                .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
+                .build()
+        )
         try {
             val afd = context.assets.openFd("music/" + file)
             p.setDataSource(afd.fileDescriptor, afd.startOffset, afd.length)
