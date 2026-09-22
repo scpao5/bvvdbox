@@ -353,6 +353,11 @@
           "label": "红星复仇者恶搞版",
           "file": "music/红星复仇者恶搞版.mp3",
           "type": "music"
+        },
+        {
+          "label": "安东星的家",
+          "file": "music/安东星的家.mp3",
+          "type": "music"
         }
       ]
     }
