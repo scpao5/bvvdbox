@@ -1,0 +1,7 @@
+[versions]
+agp = "9.2.1"
+apksign = "1.4"
+
+[plugins]
+agp-app = { id = "com.android.application", version.ref = "agp" }
+lsplugin-apksign = { id = "org.lsposed.lsplugin.apksign", version.ref = "apksign" }
